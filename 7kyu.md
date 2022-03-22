@@ -41,3 +41,15 @@ https://www.codewars.com/kata/isograms
 def is_isogram(string):
     return len(string.lower()) == len(set(string.lower()))
 ```
+
+# Digits explosion
+https://www.codewars.com/kata/digits-explosion
+
+**Python**
+```Python
+def explode(s):
+    result = ''
+    for i in s:
+        result += i * int(i)
+    return result
+```
