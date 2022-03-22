@@ -32,3 +32,12 @@ def disemvowel(string_):
             result += i
     return result
 ```
+
+# Isograms
+https://www.codewars.com/kata/isograms
+
+**Python**
+```Python
+def is_isogram(string):
+    return len(string.lower()) == len(set(string.lower()))
+```
