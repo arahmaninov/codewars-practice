@@ -19,3 +19,16 @@ def high_and_low(numbers):
             
     return result
 ```
+
+# Disemvowel Trolls
+https://www.codewars.com/kata/disemvowel-trolls
+
+**Python**
+```Python
+def disemvowel(string_):
+    result = ''
+    for i in string_:
+        if i not in 'aoeuiAOEUI':
+            result += i
+    return result
+```
