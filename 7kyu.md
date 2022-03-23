@@ -46,6 +46,21 @@ def disemvowel(string_):
     return result
 ```
 
+**JavaScript**
+```JavaScript
+function disemvowel(str) {
+  let result = '';
+  let letters = ['a', 'A', 'e', 'E', 'u', 'U', 'i', 'I', 'o', 'O'];
+  for (let i of str) {
+  	if(letters.indexOf(i) == -1) {
+  		result += i;
+  	}
+  }
+
+  return result;
+}
+```
+
 # Isograms
 https://www.codewars.com/kata/isograms
 
