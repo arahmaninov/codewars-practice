@@ -20,6 +20,19 @@ def high_and_low(numbers):
     return result
 ```
 
+**JavaScript**
+```JavaScript
+function highAndLow(numbers) {
+	const myArray = numbers.split(' ');
+
+	const myArrayMax = Math.max(...myArray);
+	const myArrayMin = Math.min(...myArray);
+
+	return `${myArrayMax} ${myArrayMin}`;
+
+}
+```
+
 # Disemvowel Trolls
 https://www.codewars.com/kata/disemvowel-trolls
 
