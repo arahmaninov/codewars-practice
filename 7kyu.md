@@ -81,3 +81,21 @@ def explode(s):
         result += i * int(i)
     return result
 ```
+
+# Head, Tail, Init and Last
+https://www.codewars.com/kata/head-tail-init-and-last
+
+**Python**
+```Python
+def head(arr):
+    return arr[0]
+
+def tail(arr):
+    return arr[1:]
+
+def init(arr):
+    return arr[:-1]
+
+def last(arr):
+    return arr[-1]
+```
