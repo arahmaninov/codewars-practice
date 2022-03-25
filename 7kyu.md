@@ -70,6 +70,14 @@ def is_isogram(string):
     return len(string.lower()) == len(set(string.lower()))
 ```
 
+**JavaScript**
+```JavaScript
+function isIsogram(str){
+  let mySet = new Set(str.toLowerCase());
+  return str.length == mySet.size;
+}
+```
+
 # Digits explosion
 https://www.codewars.com/kata/digits-explosion
 
