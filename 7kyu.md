@@ -90,6 +90,21 @@ def explode(s):
     return result
 ```
 
+**JavaScript**
+```JavaScript
+function explode(s) {
+  result = ''
+  
+  for (let i of s) {
+	  for (let j = 0; j < +i; j++) {
+		  result += i;
+	  }
+  }
+  
+  return result;
+}
+```
+
 # Head, Tail, Init and Last
 https://www.codewars.com/kata/head-tail-init-and-last
 
