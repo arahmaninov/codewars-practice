@@ -142,6 +142,10 @@ function last(arr) {
 }
 ```
 
+# Javascript Mathematician
+
+???
+
 # The Coupon Code
 https://www.codewars.com/kata/the-coupon-code
 
@@ -153,4 +157,19 @@ def check_coupon(entered_code, correct_code, current_date, expiration_date):
     current_date_obj = datetime.datetime.strptime(current_date, "%B %d, %Y")
     expiration_date_obj = datetime.datetime.strptime(expiration_date, "%B %d, %Y")
     return entered_code == str(correct_code) and current_date_obj <= expiration_date_obj
+```
+
+# Unlucky Days
+
+???
+
+# Mylanguages
+https://www.codewars.com/kata/mylanguages
+
+**Python**
+```Python
+def my_languages(results):
+    languages = {key: value for key, value in results.items() if value > 59}
+    
+    return sorted(languages, key=languages.__getitem__, reverse=True)
 ```
