@@ -163,8 +163,8 @@ def check_coupon(entered_code, correct_code, current_date, expiration_date):
 
 ???
 
-# Mylanguages
-https://www.codewars.com/kata/mylanguages
+# My Language Skills
+https://www.codewars.com/kata/my-language-skills
 
 **Python**
 ```Python
