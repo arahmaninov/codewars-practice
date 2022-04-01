@@ -64,7 +64,7 @@ function duplicateEncode(word){
 
 
 # Multiples of 3 or 5
-
+https://www.codewars.com/kata/multiples-of-3-or-5
 
 **Python**
 ```Python
@@ -75,4 +75,17 @@ def solution(number):
             result += i
             
     return result
+```
+**JavaScript**
+```JavaScript
+function solution(number){
+  let result = 0;
+  for (let i = 1; i < number; i++) {
+      if (i % 3 == 0 || i % 5 == 0) {
+          result += i;
+      }
+  }
+  
+  return result
+}
 ```
