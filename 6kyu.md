@@ -61,7 +61,17 @@ function duplicateEncode(word){
 ```
 
 # N-th Fibonacci
+https://www.codewars.com/kata/n-th-fibonacci
 
+**Python**
+```Python
+def nth_fib(n):
+    start_arr = [0, 1]
+    for i in range(n - 2):
+        start_arr.append(start_arr[-1] + start_arr[-2])
+
+    return start_arr[n - 1]
+```
 
 # Multiples of 3 or 5
 https://www.codewars.com/kata/multiples-of-3-or-5
