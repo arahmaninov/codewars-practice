@@ -73,6 +73,18 @@ def nth_fib(n):
     return start_arr[n - 1]
 ```
 
+**JavaScript**
+```JavaScript
+function nthFibo(n) {
+  startArr = [0, 1];
+  for (let i = 0; i < n - 2; i++) {
+      startArr.push(startArr[startArr.length - 1] + startArr[startArr.length - 2]);
+  }
+  
+  return startArr[n - 1];
+}
+```
+
 # Multiples of 3 or 5
 https://www.codewars.com/kata/multiples-of-3-or-5
 
