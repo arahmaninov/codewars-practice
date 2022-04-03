@@ -132,3 +132,42 @@ function deepCount(a){
     return count;     
 }
 ```
+# Length of missing array
+
+
+**JavaScript**
+```JavaScript
+function getLengthOfMissingArray(arr) {
+  console.log(`This is original array: ${arr}`);
+  console.log('---------')
+  let lenArray = [];
+  if (arr === null) {
+    return 0;
+  }
+  if (arr.length == 0) {
+      return 0;
+  } else {
+      for (let i of arr) {
+          if (Boolean(i) != true || i.length == 0) {
+              return 0;
+          } else {
+              lenArray.push(i.length);
+          }
+      }
+  }
+  //console.log(lenArray);
+  lenArray.sort();
+  console.log(lenArray);
+  
+  if (lenArray.length == 0) {
+      return 0;
+  } else {
+      for (let j = Math.min(...lenArray); j <= Math.max(...lenArray); j++) {
+          if (lenArray.includes(j) === false) {
+              console.log('complete!')
+              return j;
+          }
+      }
+  }
+}
+```
