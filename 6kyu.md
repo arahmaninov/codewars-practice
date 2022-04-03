@@ -111,3 +111,24 @@ function solution(number){
   return result
 }
 ```
+
+# Array Deep Count
+https://www.codewars.com/kata/array-deep-count
+
+**JavaScript**
+```JavaScript
+function deepCount(a){ 
+    let count = 0; 
+    const recursion = arr => { 
+        count += arr.length;
+        for ( let i of arr ) {
+            if ( Array.isArray(i) ) {
+                recursion(i);
+                }             
+        }         
+    } 
+    recursion(a);
+    
+    return count;     
+}
+```
