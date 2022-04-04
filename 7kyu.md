@@ -159,6 +159,13 @@ def check_coupon(entered_code, correct_code, current_date, expiration_date):
     return entered_code == str(correct_code) and current_date_obj <= expiration_date_obj
 ```
 
+**JavaScript**
+```JavaScript
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+}
+```
+
 # Unlucky Days
 
 ???
