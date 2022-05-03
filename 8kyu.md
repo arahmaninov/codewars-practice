@@ -34,3 +34,28 @@ function countPositivesSumNegatives(input) {
   }, [0, 0]);
 }
 ```
+
+# String cleaning
+https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript
+
+### My code
+
+```JavaScript
+function stringClean(s){
+  let result = '';
+  for(let char of s) {
+    if (!'1234567890'.includes(char)) {
+      result += char;
+    }
+  }
+  return result;
+}
+```
+
+### From comments
+
+```JavaScript
+function stringClean(s){
+  return s.replace(/\d/g, "");
+}
+```
